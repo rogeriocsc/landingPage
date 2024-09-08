@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h2, p, a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+header {
+    height: 100px;
+    background-color: #347355;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header h2 {
+    color: yellow;
+    font-weight: 600;
+    font-size: 1.7em;
+}
+
+.btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #CEF09D;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+.btn:hover {
+    background-color: #d2f8d5;
+}
+
+nav {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    left: -100%;
+    transition: all 0.5s;
+}
+
+nav > ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;  
+}
+
+nav > ul > li > a {
+    display: block;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1em;
+    color: white;
+    background-color: rgba(16, 16, 16, .5);
+    transition-duration: .4s;
+}
+
+nav > ul > li > a:hover {
+    background-color: #F29F05;
+}
+
+.mostrar {
+    left: 0%;
+}
+
+main {
+    background-color: rgb(216, 255, 219);
+    padding-bottom: 20px;
+    margin: 5px 5px;
+}
+
+article h2 {
+    background-color: white;
+    text-align: center;
+    padding: 40px;
+    color: #191970;
+}
+
+.conteudo {
+    min-width: 300px;
+	max-width: 80%;
+	margin: 20px auto;
+}
+
+.card-conteudo {
+    margin: 45px 0px;
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	row-gap: 40px;
+	column-gap: 30px;
+}
+
+.bloco {
+    background-color: white;
+	height: 180px;
+	width: 170px;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+	border-radius: 16px;
+    cursor: pointer;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.259);
+}
+
+.bloco h2, p {
+    color: #191970;
+}
+
+.texto {
+    max-width: 900px;
+    margin: auto;
+}
+
+.texto h2 {
+    text-align: center;
+    padding: 10px;
+    color: red;
+}
+
+.texto p {
+    margin: 10px 12px;
+    padding-bottom: 15px;
+    text-align: justify;
+    line-height: 1.6em;
+    color: #191970;
+}
+
+.img {
+    margin: auto;
+    display: block;
+    padding: 40px 0px;
+    max-width: 100%;
+}
+
+footer {
+    background-color: #347355;
+    padding: 30px;
+}
+  
+footer p {
+    color: white;
+    font-size: 1.04em;
+    text-align: center;
+
+}
+
+/* media query - min-width:  */
+@media screen and (min-width: 900px) {
+    .btn {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        width: auto;
+    }
+
+    nav > ul {
+        display: flex;
+    }
+
+    nav > ul > li > a {
+        background: none;
+        border-radius: 5px;
+    }
+}
