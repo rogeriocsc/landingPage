@@ -1,0 +1,29 @@
+@media screen and (min-width: 768px) {
+    nav {
+        position: static;
+        width: auto;
+    }
+
+    nav > ul > li {
+        display: inline-block;
+    }
+
+    nav > ul > li > a {
+        margin: 5px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 767px) { 
+    header > button, .btn-fechar {
+        display: block;
+    }
+
+    header > nav {
+        background-color: #A8B545;
+    }
+
+    .texto > p {
+        width: 90%;
+    }
+}

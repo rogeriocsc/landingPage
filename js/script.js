@@ -1,5 +1,4 @@
-const btn=document.querySelector("#btn")
-btn.addEventListener("click",(evt)=>{
-    let menu = document.getElementById("menu")
+function clickMenu() {
+    let menu = window.document.getElementById('itens')
     menu.classList.toggle('mostrar')
-})
+}

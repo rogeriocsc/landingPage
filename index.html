@@ -3,62 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css" media="all">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="shortcut icon" href="imagens/ico-favicon.ico" type="image/x-icon">
-    <title>Template Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="css/estilo.css" media="all">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>Landing Page</title>
 </head>
+<script src="js/script.js"></script>
 <body>
     <header>
         <h2>Logo</h2>
-        <button class="btn" id="btn">
-            <span class="material-symbols-outlined">lists</span>
+        <button onclick="clickMenu()">
+            <span class="material-symbols-outlined">list</span>
         </button>
-        <nav id="menu">
+        <nav id="itens">
+            <button class="btn-fechar" onclick="clickMenu()">Fechar</button>
             <ul>
-                <li><a href="#">LinkA</a></li>
-                <li><a href="#">LinkB</a></li>
-                <li><a href="#">LinkC</a></li>
+                <li><a href="#">Link A</a></li>
+                <li><a href="#">Link B</a></li>
+                <li><a href="#">Link C</a></li>
+                <li><a href="#">Link C</a></li>
             </ul>
         </nav>
     </header>
+    <div class="logo-subtitulo">
+        <h2>Subtitulo</h2>
+    </div>
     <main>
-        <article>
-            <h2>Subtitulo</h2>
-        </article>
         <section class="conteudo">
-            <section class="card-conteudo">
-                <div class="bloco">
-                    <img src="imagens/icone-a.png" alt="ecommerce">
+            <div class="card">
+                <div class="card-conteudo"> 
+                    <img src="imagens/cesta.png" alt="cesta">
                     <h2>Subtitulo</h2>
                     <p>Texto Aqui</p>
                 </div>
-                <div class="bloco">
-                    <img src="imagens/icone-b.png" alt="ecommerce">
+                <div class="card-conteudo">
+                    <img src="imagens/carrinho.png" alt="carrinho">
                     <h2>Subtitulo</h2>
                     <p>Texto Aqui</p>
                 </div>
-                <div class="bloco">
-                    <img src="imagens/icone-c.png" alt="ecommerce">
+                <div class="card-conteudo">
+                    <img src="imagens/etiqueta-a.png" alt="etiqueta">
                     <h2>Subtitulo</h2>
                     <p>Texto Aqui</p>
                 </div>
-                <div class="bloco">
-                    <img src="imagens/icone-d.png" alt="ecommerce">
+                <div class="card-conteudo">
+                    <img src="imagens/etiqueta-b.png" alt="etiqueta">
                     <h2>Subtitulo</h2>
                     <p>Texto Aqui</p>
                 </div>
-            </section>
+            </div>
+            <article class="texto">
+                <h2>Página Web</h2>
+                <p>
+                    Uma página web simples oferece praticidade e eficiência, sendo ideal para divulgação rápida de informações, contatos ou serviços, com baixo custo e fácil manutenção.
+                </p>
+            </article>
+            <picture>
+                <source media="(max-width: 768px)" srcset="imagens/banner-pq.png" type="image/png">
+                <img src="imagens/banner.png" alt="banner">
+            </picture>
         </section>
-        <section class="texto">
-            <h2>Subtitulo</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, sed reprehenderit nihil eligendi iste exercitationem expedita veritatis aliquam ullam consequatur at. br Iste, sunt quibusdam dolores dolore nisi maiores beatae enim.
-            </p>
-        </section>
-        <img class="img" src="imagens/banner-ecommerce.png" alt="banner">
     </main>
-    <script src="js/script.js"></script>
     <footer>
         <p>Copyright © 2025</p>
     </footer>
